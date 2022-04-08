@@ -11,9 +11,9 @@
     @apply text-3xl font-bold mb-7;
   }
 
-  a {
+  /* a {
     @apply underline;
-  }
+  } */
 
   button, input[type="submit"] {
     @apply border border-gray-800 py-1.5 px-4 hover:bg-black hover:text-white 
