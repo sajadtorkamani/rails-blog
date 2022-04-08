@@ -12,6 +12,11 @@ Make sure you've configured DB credentials in `config/database.yml` and then run
 ./bin/rails db:create
 ```
 
+### Run dev server and `tailwindcss:watch`
+```bash
+./bin/dev
+```
+
 ## Deployment
 
 TODO

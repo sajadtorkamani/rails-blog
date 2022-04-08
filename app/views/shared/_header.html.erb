@@ -1,0 +1,15 @@
+<header class="mt-8 mb-8 flex justify-between items-center underline">
+  <%= link_to 'Blog', root_path, class: 'text-lg font-bold' %>
+
+  <ul class="flex text-sm">
+    <% if user_signed_in? %>
+    <% else %>
+      <li class="mr-3">
+        <%= link_to 'Register', new_user_registration_path %>
+      </li>
+      <li>
+        <%= link_to 'Login', new_user_session_path %>
+      </li>
+    <% end %>
+  </nav>
+</header>

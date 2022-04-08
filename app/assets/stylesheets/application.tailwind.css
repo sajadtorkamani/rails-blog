@@ -2,12 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-/*
+@layer base {
+  h1 {
+    @apply text-3xl font-bold mb-3;
+  }
+  
+  h2 {
+    @apply text-3xl font-bold mb-7;
+  }
 
-@layer components {
-  .btn-primary {
-    @apply py-2 px-4 bg-blue-200;
+  button, input[type="submit"] {
+    @apply border border-gray-800 py-1.5 px-4 hover:bg-black hover:text-white 
+      hover:cursor-pointer mb-3;
+  }
+
+  input[type="text"], input[type="email"], input[type="password"], textarea {
+    @apply w-full;
+  }
+
+  input[type="checkbox"] {
+    @apply inline-block mr-1;
   }
 }
-
-*/
