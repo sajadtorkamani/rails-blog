@@ -55,7 +55,7 @@ SimpleForm.setup do |config|
     # b.use :input, class: 'input', error_class: 'is-invalid', valid_class: 'is-valid'
     b.use :label_input
     b.use :hint, wrap_with: { tag: :span, class: "hint block text-sm mt-0.5" }
-    b.use :error, wrap_with: { tag: :span, class: :error }
+    b.use :error, wrap_with: { tag: :span, class: "error text-red-600 text-sm mt-1" }
 
     ## full_messages_for
     # If you want to display the full error message for the attribute, you can
@@ -85,7 +85,7 @@ SimpleForm.setup do |config|
   config.error_notification_tag = :div
 
   # CSS class to add for error notification helper.
-  config.error_notification_class = "error_notification"
+  config.error_notification_class = "error_notification text-red-600 mb-4"
 
   # Series of attempts to detect a default label method for collection.
   # config.collection_label_methods = [ :to_label, :name, :title, :to_s ]

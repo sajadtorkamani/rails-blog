@@ -6,9 +6,13 @@
   h1 {
     @apply text-3xl font-bold mb-3;
   }
-  
+
   h2 {
     @apply text-3xl font-bold mb-7;
+  }
+
+  a {
+    @apply underline;
   }
 
   button, input[type="submit"] {
